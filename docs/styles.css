@@ -1,0 +1,77 @@
+/* homepage */
+
+body {
+  background-color: #121212;
+}
+
+a {
+  color: #9E9E9E
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: #BDBDBD;
+    justify-content: flex-start;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 75%;
+}
+
+.body {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 24px;
+  color: #BDBDBD;
+}
+
+.subtitle {
+    padding-bottom: 20px;
+    color: #BDBDBD;
+}
+
+.generator {
+  float: right;
+  position: absolute;
+  top: 1040px;
+  right: 40px;
+  color: #BDBDBD;
+  max-width: 500px;
+}
+
+h4 {
+  color: #BDBDBD;
+}
+
+/* content */
+
+.article-title {
+  padding-top: 25px;
+  padding-left: 23px;
+  align-content: center;
+  text-align: left;
+  margin: auto;
+  max-width: 600px;
+}
+
+.article-body{
+  padding-top: 25px;
+  padding-left: 23px;
+  text-align: left;
+  align-content: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+/* global */
+
+a:hover {
+  cursor:url(http://www.rw-designer.com/cursor-extern.php?id=3504),auto;
+}

@@ -2,49 +2,70 @@
   <head>
     <meta charset="utf-8">
     <title>digital alchemy 🦑</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
-
+  <body onload="loadText()">
   <div class="header" id="homepage">
-    <pre>
+    <div>
+      <pre>
  +-++-++-++-++-++-++-+   +-++-++-++-++-++-++-+
  |d||i||g||i||t||a||l|   |a||l||c||h||e||m||y|
  +-++-++-++-++-++-++-+   +-++-++-++-++-++-++-+
-    </pre>
+      </pre>
+    </div>
+    <div>
+      <img src="https://res.cloudinary.com/dvargvav9/image/upload/v1590445203/potion_website_zyqiup.png" style="width:50px; padding-top: 5px; padding-left: 10px;"/>
+    </div>
+
+
+
   </div>
 
   <div class="body">
 
-
-    <h4>🆆🆁🅸🆃🅸🅽🅶🆂</h4>
+    <h4>ʀɛǟɖɨռɢֆ & ʀɛֆɛǟʀƈɦ</h4>
     <p>
       <ul>
-        <li></li>
-      </ul>
-    </p>
-
-    <h4>ʀʀɛǟɖɨռɢֆ & ʀɛֆɛǟʀƈɦ</h4>
-    <p>
-      <ul>
-        <li> <a href="https://www.notion.so/X-RG-Degrowth-21560339d8734a8e82bfa7433c1645ab">{X/RG*III} Degrowth</a></li>
-        <li> <a href="https://www.notion.so/X-RG-Social-Ecology-71725e79be7e46f58e8919a7540f2c13">{X/RG*II} Social Ecology</a></li>
-        <li> <a href="https://www.notion.so/X-RG-Symbiosis-d9a637fc9f304aaf94a81343985d2344">{X/RG*I} Symbiosis</a></li>
+        <li>I'm a part of the xyrden reading group. Here are some archived reading sessions: </li>
+          <ul>
+            <li><a href="https://www.notion.so/X-RG-Degrowth-21560339d8734a8e82bfa7433c1645ab">{X/RG*III} Degrowth</a></li>
+            <li> <a href="https://www.notion.so/X-RG-Social-Ecology-71725e79be7e46f58e8919a7540f2c13">{X/RG*II} Social Ecology</a></li>
+            <li> <a href="https://www.notion.so/X-RG-Symbiosis-d9a637fc9f304aaf94a81343985d2344">{X/RG*I} Symbiosis</a></li>
+          </ul>
       </ul>
     </p>
 
     <h4>Ｈｏｍｅｓｔｅａｄｉｎｇ　ゆゑラ</h4>
     <p>
       <ul>
-        <li><a href="pages/vermicomposting.html">Vermicomposting</a></li>
+        <li><a href="vermicomposting.html">Vermicomposting</a></li>
+        <li><a href="vermicomposting.html">Fermentation</a></li>
+        <li><a href="vermicomposting.html">Plants</a></li>
       </ul>
     </p>
+
+
+  <div class="generator" id="generator">
+  </div>
+
+  <script>
+  function loadText() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        shopDescription = JSON.parse(this.responseText)
+        document.getElementById("generator").innerHTML = shopDescription.name + "<br><br>" + shopDescription.location + "<br><br>" + shopDescription.description
+      }
+    };
+    xhttp.open("GET", "/generate", true);
+    xhttp.send();
+  }
+  </script>
+
   </div>
   </body>
-
-  <script type="application/javascript" src="script.js"></script>
 
 </html>
