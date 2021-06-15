@@ -52,7 +52,7 @@
         document.getElementById("generator").innerHTML = shopDescription.name + "<br><br>" + shopDescription.location + "<br><br>" + shopDescription.description
       }
     };
-    xhttp.open("GET", "/generate", true);
+    xhttp.open("GET", "https://donjon.bin.sh/d20/random/rpc.cgi?type=Magic+Shop+Name&n=1&town_size=Small+Town&shop_type=Alchemist", true);
     xhttp.send();
   }
   </script>
