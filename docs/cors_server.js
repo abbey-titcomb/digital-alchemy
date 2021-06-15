@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'https://donjon.bin.sh/d20/random/rpc.cgi?type=Magic+Shop+Name&n=1&town_size=Small+Town&shop_type=Alchemist, https://donjon.bin.sh/d20/random/rpc.cgi?type=Magic+Shop+Location&n=1&town_size=Small+Town&shop_type=Alchemist, https://donjon.bin.sh/d20/random/rpc.cgi?type=Magic+Shop+Description&n=1&town_size=Small+Town&shop_type=Alchemist');
   next();
 });
 
