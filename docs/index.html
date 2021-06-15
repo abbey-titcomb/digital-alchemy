@@ -47,6 +47,7 @@
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText)
         shopDescription = JSON.parse(this.responseText)
         document.getElementById("generator").innerHTML = shopDescription.name + "<br><br>" + shopDescription.location + "<br><br>" + shopDescription.description
       }
