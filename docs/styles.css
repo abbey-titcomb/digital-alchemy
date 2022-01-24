@@ -4,7 +4,7 @@ body {
   background-color: #121212;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   letter-spacing: 1.5px;
-  cursor:url(http://www.rw-designer.com/cursor-extern.php?id=3504),auto;
+  cursor:url(http://www.rw-designer.com/cursor-extern.php?id=3504), pointer;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 html {
   margin: 0;
   height: 100%;
-  cursor:url(http://www.rw-designer.com/cursor-extern.php?id=3504),auto;
+  cursor:url(http://www.rw-designer.com/cursor-extern.php?id=3504), pointer;
 }
 
 .header {
